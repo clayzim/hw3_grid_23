@@ -181,12 +181,17 @@ first div in the grid  and place it in the grid. */
   grid-column: 1 / span 3;
   max-height: 600px;
   overflow: hidden;
+  align-self: center;
 }
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
  .text-block {
   align-self: center;
   text-align: center;
+ }
+
+ .overview {
+  overflow-y: scroll;
  }
 
 /* Add your media query here */
@@ -220,7 +225,7 @@ first div in the grid  and place it in the grid. */
   /* Step 13:Write the selector/rule property to update the .text-block class */
   .text-block {
     max-height: 250px;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 
   .about-image,
