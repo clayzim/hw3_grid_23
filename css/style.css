@@ -12,7 +12,7 @@ body{
 
 
 .overview{
-  background-attachment: fixed; /* Parallax effect */     
+  background-attachment: fixed; /* Parallax effect */
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
@@ -49,7 +49,7 @@ nav li{
 nav a{
   color: black;
   font-weight: bold;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 
@@ -131,11 +131,19 @@ nav a:focus {
 
 
 /* Step 4: Write selector/rule property to style the container */
+.container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 5fr) minmax(0, 1fr);
+  row-gap: 15px;
+}
 
-
-/* Step 5: Write selector/rule property to add the background image to the 
+/* Step 5: Write selector/rule property to add the background image to the
 first div in the grid  and place it in the grid. */
-
+.container > :first-child {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-image: url(../images/header.jpg);
+}
 
 
 /* Steps 6 and 7: Write the selector/rule properties to add place the next elements in the next
@@ -152,7 +160,7 @@ first div in the grid  and place it in the grid. */
 
   /* Step 9: Write the selector/rule property to style the nav element */
 
- 
+
   /* Step 10: Write the selector/rule property to update the .container class */
 
 
