@@ -133,14 +133,14 @@ nav a:focus {
 /* Step 4: Write selector/rule property to style the container */
 .container {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 5fr) minmax(0, 1fr);
+  grid-template-columns: 1fr 5fr 1fr;
   row-gap: 15px;
 }
 
 /* Step 5: Write selector/rule property to add the background image to the
 first div in the grid  and place it in the grid. */
 .container > :first-child {
-  grid-column: 1 / span 3;
+  grid-column: 1 / -1;
   background-image: url(../images/header.jpg);
 }
 
